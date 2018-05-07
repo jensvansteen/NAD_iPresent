@@ -1,0 +1,197 @@
+{
+    "frameworks": {
+        "frameworkInfo": [
+            {
+                "name": "Kitura",
+                "picture": "kitura",
+                "text": "Nam porttitor blandit accumsan. Ut vel dictum sem, a pretium dui. In malesuada enim in dolor euismod, id commodo mi consectetur. Curabitur at vestibulum nisi. Nullam vehicula nisi velit. Mauris turpis nisl, molestie ut ipsum et, suscipit vehicula odio. Vestibulum interdum vestibulum felis ac molestie. Praesent aliquet quam et libero dictum, vitae dignissim leo eleifend. In in turpis turpis. Quisque justo turpis, vestibulum non enim nec, tempor mollis mi. Sed vel tristique quam.",
+                "stars": 6465,
+                "format": [
+                    "JSON",
+                    "MQTT",
+                    "XML"
+                ],
+                "databases": [
+                    "MySQL",
+                    "PostgreSQL",
+                    "CouchDB"
+                ],
+                "cloud": [
+                    "AWS",
+                    "Bluemix",
+                    "Heroku"
+                ]
+            },
+            {
+                "name": "Perfect",
+                "picture": "perfect",
+                "text": "Nam porttitor blandit accumsan. Ut vel dictum sem, a pretium dui. In malesuada enim in dolor euismod, id commodo mi consectetur. Curabitur at vestibulum nisi. Nullam vehicula nisi velit. Mauris turpis nisl, molestie ut ipsum et, suscipit vehicula odio. Vestibulum interdum vestibulum felis ac molestie. Praesent aliquet quam et libero dictum, vitae dignissim leo eleifend. In in turpis turpis. Quisque justo turpis, vestibulum non enim nec, tempor mollis mi. Sed vel tristique quam.",
+                "stars": 6465,
+                "format": [
+                    "JSON",
+                    "MQTT",
+                    "XML"
+                ],
+                "databases": [
+                    "MySQL",
+                    "PostgreSQL",
+                    "CouchDB"
+                ],
+                "cloud": [
+                    "AWS",
+                    "Bluemix",
+                    "Heroku"
+                ]
+            },
+            {
+                "name": "Vapor",
+                "picture": "vapor",
+                "text": "Nam porttitor blandit accumsan. Ut vel dictum sem, a pretium dui. In malesuada enim in dolor euismod, id commodo mi consectetur. Curabitur at vestibulum nisi. Nullam vehicula nisi velit. Mauris turpis nisl, molestie ut ipsum et, suscipit vehicula odio. Vestibulum interdum vestibulum felis ac molestie. Praesent aliquet quam et libero dictum, vitae dignissim leo eleifend. In in turpis turpis. Quisque justo turpis, vestibulum non enim nec, tempor mollis mi. Sed vel tristique quam.",
+                "stars": 6465,
+                "format": [
+                    "JSON",
+                    "MQTT",
+                    "XML"
+                ],
+                "databases": [
+                    "MySQL",
+                    "PostgreSQL",
+                    "CouchDB"
+                ],
+                "cloud": [
+                    "AWS",
+                    "Bluemix",
+                    "Heroku"
+                ]
+            },
+            {
+                "name": "Zewo",
+                "picture": "zewo",
+                "text": "Nam porttitor blandit accumsan. Ut vel dictum sem, a pretium dui. In malesuada enim in dolor euismod, id commodo mi consectetur. Curabitur at vestibulum nisi. Nullam vehicula nisi velit. Mauris turpis nisl, molestie ut ipsum et, suscipit vehicula odio. Vestibulum interdum vestibulum felis ac molestie. Praesent aliquet quam et libero dictum, vitae dignissim leo eleifend. In in turpis turpis. Quisque justo turpis, vestibulum non enim nec, tempor mollis mi. Sed vel tristique quam.",
+                "stars": 6465,
+                "format": [
+                    "JSON",
+                    "MQTT",
+                    "XML"
+                ],
+                "databases": [
+                    "MySQL",
+                    "PostgreSQL",
+                    "CouchDB"
+                ],
+                "cloud": [
+                    "AWS",
+                    "Bluemix",
+                    "Heroku"
+                ]
+            }
+        ],
+        "benchmarkListing": [
+            {
+                "name": "Blog benchmarks - Request/Seconds",
+                "scale": 12500,
+                "results": [
+                    {
+                        "name": "Perfect",
+                        "value": 7351
+                    },
+                    {
+                        "name": "Vapor",
+                        "value": 6709
+                    },
+                    {
+                        "name": "Node.js",
+                        "value": 6387
+                    },
+                    {
+                        "name": "Kitura",
+                        "value": 5757
+                    },
+                    {
+                        "name": "Zewo",
+                        "value": 3180
+                    }
+                ]
+            },
+            {
+                "name": "Blog benchmarks - Average Latency",
+                "scale": 10,
+                "results": [
+                    {
+                        "name": "Node.js",
+                        "value": 3.24
+                    },
+                    {
+                        "name": "Perfect",
+                        "value": 4.05
+                    },
+                    {
+                        "name": "Kitura",
+                        "colorNummer": 2,
+                        "value": 5.50
+                    },
+                    {
+                        "name": "Zewo",
+                        "value": 6.29
+                    },
+                    {
+                        "name": "Vapor",
+                        "value": 7.08
+                    }
+                ]
+            },
+            {
+                "name": "JSON benchmarks - Request/Seconds",
+                "scale": 12500,
+                "results": [
+                    {
+                        "name": "Perfect",
+                        "value": 12270
+                    },
+                    {
+                        "name": "Kitura",
+                        "value": 9138
+                    },
+                    {
+                        "name": "Node.js",
+                        "value": 7308
+                    },
+                    {
+                        "name": "Vapor",
+                        "value": 6242
+                    },
+                    {
+                        "name": "Zewo",
+                        "value": 5187
+                    }
+                ]
+            },
+            {
+                "name": "JSON benchmarks - Average Latency",
+                "scale": 10,
+                "results": [
+                    {
+                        "name": "Node.js",
+                        "value": 2.80
+                    },
+                    {
+                        "name": "Perfect",
+                        "value": 3.39
+                    },
+                    {
+                        "name": "Zewo",
+                        "value": 3.94
+                    },
+                    {
+                        "name": "Kitura",
+                        "value": 4.03
+                    },
+                    {
+                        "name": "Vapor",
+                        "value": 6.40
+                    }
+                ]
+            }
+        ]
+    }
+}
