@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		333AFDC5209D2CC8005E8A52 /* ListItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333AFDC4209D2CC8005E8A52 /* ListItemTableViewCell.swift */; };
 		333AFDC7209DB973005E8A52 /* BenchmarksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333AFDC6209DB973005E8A52 /* BenchmarksViewController.swift */; };
 		333AFDC9209DBA14005E8A52 /* BarChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333AFDC8209DBA14005E8A52 /* BarChart.swift */; };
 		333AFDCD209DE947005E8A52 /* benchmarkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333AFDCC209DE947005E8A52 /* benchmarkModel.swift */; };
@@ -21,10 +20,12 @@
 		33D4E21C209A4B1700B46864 /* frameworkListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D4E21B209A4B1700B46864 /* frameworkListModel.swift */; };
 		33D4E224209C945600B46864 /* FrameworkDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D4E223209C945600B46864 /* FrameworkDetailViewController.swift */; };
 		33E6DA7E20A05C4C007FE749 /* SectionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E6DA7D20A05C4C007FE749 /* SectionCollectionViewCell.swift */; };
+		33E6DA8220A07E18007FE749 /* DataFormatCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E6DA8120A07E18007FE749 /* DataFormatCollectionViewCell.swift */; };
+		33E6DA8420A08198007FE749 /* DataBaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E6DA8320A08198007FE749 /* DataBaseCollectionViewCell.swift */; };
+		33E6DA8620A081A4007FE749 /* CloudCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E6DA8520A081A4007FE749 /* CloudCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		333AFDC4209D2CC8005E8A52 /* ListItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemTableViewCell.swift; sourceTree = "<group>"; };
 		333AFDC6209DB973005E8A52 /* BenchmarksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BenchmarksViewController.swift; sourceTree = "<group>"; };
 		333AFDC8209DBA14005E8A52 /* BarChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChart.swift; sourceTree = "<group>"; };
 		333AFDCC209DE947005E8A52 /* benchmarkModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = benchmarkModel.swift; sourceTree = "<group>"; };
@@ -40,6 +41,9 @@
 		33D4E21B209A4B1700B46864 /* frameworkListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = frameworkListModel.swift; sourceTree = "<group>"; };
 		33D4E223209C945600B46864 /* FrameworkDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkDetailViewController.swift; sourceTree = "<group>"; };
 		33E6DA7D20A05C4C007FE749 /* SectionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionCollectionViewCell.swift; sourceTree = "<group>"; };
+		33E6DA8120A07E18007FE749 /* DataFormatCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataFormatCollectionViewCell.swift; sourceTree = "<group>"; };
+		33E6DA8320A08198007FE749 /* DataBaseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBaseCollectionViewCell.swift; sourceTree = "<group>"; };
+		33E6DA8520A081A4007FE749 /* CloudCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,7 @@
 				3338F2A7209FA2D0000516CC /* classes */,
 				33D4E217209A366D00B46864 /* OverzichtFrameworksTableViewController.swift */,
 				33D4E223209C945600B46864 /* FrameworkDetailViewController.swift */,
+				33E6DA8120A07E18007FE749 /* DataFormatCollectionViewCell.swift */,
 			);
 			path = frameworkList;
 			sourceTree = "<group>";
@@ -94,8 +99,9 @@
 		3338F2A7209FA2D0000516CC /* classes */ = {
 			isa = PBXGroup;
 			children = (
-				333AFDC4209D2CC8005E8A52 /* ListItemTableViewCell.swift */,
 				33D4E219209A38CD00B46864 /* CustomTableViewCell.swift */,
+				33E6DA8320A08198007FE749 /* DataBaseCollectionViewCell.swift */,
+				33E6DA8520A081A4007FE749 /* CloudCollectionViewCell.swift */,
 			);
 			path = classes;
 			sourceTree = "<group>";
@@ -213,13 +219,15 @@
 			files = (
 				333AFDC9209DBA14005E8A52 /* BarChart.swift in Sources */,
 				33D4E21A209A38CD00B46864 /* CustomTableViewCell.swift in Sources */,
+				33E6DA8420A08198007FE749 /* DataBaseCollectionViewCell.swift in Sources */,
 				333AFDCD209DE947005E8A52 /* benchmarkModel.swift in Sources */,
 				333AFDC7209DB973005E8A52 /* BenchmarksViewController.swift in Sources */,
 				33D4E21C209A4B1700B46864 /* frameworkListModel.swift in Sources */,
-				333AFDC5209D2CC8005E8A52 /* ListItemTableViewCell.swift in Sources */,
+				33E6DA8220A07E18007FE749 /* DataFormatCollectionViewCell.swift in Sources */,
 				33D4E224209C945600B46864 /* FrameworkDetailViewController.swift in Sources */,
 				3347E1BD209A11430059744D /* AppDelegate.swift in Sources */,
 				33E6DA7E20A05C4C007FE749 /* SectionCollectionViewCell.swift in Sources */,
+				33E6DA8620A081A4007FE749 /* CloudCollectionViewCell.swift in Sources */,
 				33D4E218209A366D00B46864 /* OverzichtFrameworksTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

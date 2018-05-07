@@ -8,11 +8,11 @@
 
 import UIKit
 
-class FrameworkDetailViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class FrameworkDetailViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource  {
     
-  
-     var framework: Framework?
     
+    var framework: Framework?
+        
     var formats = [String]()
     var databases = [String]()
     var clouds = [String]()
@@ -26,7 +26,10 @@ class FrameworkDetailViewController: UIViewController, UITableViewDelegate, UITa
     @IBOutlet weak var frameworkDetailView: UIView!
     @IBOutlet weak var frameworkTextView: UIView!
     @IBOutlet weak var frameworkText: UILabel!
-    @IBOutlet weak var statsTableView: UITableView!
+    @IBOutlet weak var dataFormat: UICollectionView!
+    @IBOutlet weak var dataBase: UICollectionView!
+    @IBOutlet weak var cloudOptions: UICollectionView!
+    
     
 
     
@@ -34,12 +37,17 @@ class FrameworkDetailViewController: UIViewController, UITableViewDelegate, UITa
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        dataFormat.delegate = self;
+        dataFormat.dataSource = self;
+        dataBase.dataSource = self;
+        dataBase.delegate = self;
+        cloudOptions.delegate = self;
+        cloudOptions.dataSource = self;
         
         formats = (framework?.format)!
         databases = (framework?.databases)!
         clouds = (framework?.cloud)!
-        statsTableView.delegate = self
-        statsTableView.dataSource = self
+        
 
         
         
@@ -53,6 +61,42 @@ class FrameworkDetailViewController: UIViewController, UITableViewDelegate, UITa
         // Do any additional setup after loading the view.
     }
     
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        if collectionView.tag == 1 {
+            numberOfFormats = formats.count
+            return numberOfFormats
+        } else if collectionView.tag == 2 {
+            numberOfDatabases = databases.count
+            return numberOfDatabases
+        } else if collectionView.tag == 3 {
+            numberOfClouds = clouds.count
+            return numberOfClouds
+        } else {
+            return 0
+        }
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        if collectionView.tag == 1 {
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "formatCell", for: indexPath) as! DataFormatCollectionViewCell
+            cell.formatLabel.text = formats[indexPath.row]
+            return cell
+        } else if collectionView.tag == 2 {
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "dataCell", for: indexPath) as! DataBaseCollectionViewCell
+            cell.databaseLabel.text = databases[indexPath.row]
+            return cell
+        } else if collectionView.tag == 3 {
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cloudCell", for: indexPath) as! CloudCollectionViewCell
+            cell.cloudLabel.text = clouds[indexPath.row]
+            return cell
+        } else {
+            let cell = UICollectionViewCell()
+            return cell
+        }
+   
+    }
+    
 
 
     override func didReceiveMemoryWarning() {
@@ -60,61 +104,7 @@ class FrameworkDetailViewController: UIViewController, UITableViewDelegate, UITa
         // Dispose of any resources that can be recreated.
     }
     
-    func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 3
-    }
-    
-    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let label = UILabel()
-        if section == 0 {
-            label.text = "Data format support"
-        } else if section == 1 {
-            label.text = "Databases"
-        } else if section == 2 {
-            label.text = "Supported cloud services"
-        }
-        label.font = UIFont.systemFont(ofSize: 24, weight: UIFont.Weight.semibold)
-        label.textColor = UIColor.black
-        return label
-    }
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        tableView.separatorStyle = UITableViewCellSeparatorStyle.none;
-        let formats = framework?.format
-        let databases = framework?.databases
-        let cloud = framework?.cloud
-        tableView.isScrollEnabled = false;
-        if section == 0 {
-            numberOfFormats = (formats?.count)!
-            return numberOfFormats
-        } else if section == 1 {
-            numberOfDatabases = (databases?.count)!
-            return numberOfDatabases
-        } else if section == 2 {
-            numberOfClouds = (cloud?.count)!
-            return numberOfClouds
-        } else {
-            return 0
-        }
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! ListItemTableViewCell
-        cell.selectionStyle = UITableViewCellSelectionStyle.none;
-        
-        if indexPath.section == 0 {
-            cell.listItem.text = formats[indexPath.row]
-        } else if indexPath.section == 1 {
-            cell.listItem.text = databases[indexPath.row]
-        } else if indexPath.section == 2 {
-            cell.listItem.text = clouds[indexPath.row]
-        }
-        
-        return cell
-    }
-    
+   
 
     /*
     // MARK: - Navigation
