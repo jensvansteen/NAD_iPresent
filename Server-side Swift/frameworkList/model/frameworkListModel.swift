@@ -13,6 +13,26 @@ struct FrameworkList: Codable {
     
 }
 
+struct formatList: Codable {
+    var formatInfo: [card]
+}
+
+struct databaseList: Codable {
+    var databaseInfo: [card]
+}
+
+struct cloudList: Codable {
+    var cloudInfo: [card]
+}
+
+struct card: Codable {
+    let picture: String
+    let name: String
+    let url: String
+    let color: String
+    let textcolor: String
+}
+
 
 struct Framework: Codable {
     let name: String
