@@ -7,30 +7,22 @@
 //
 
 import Foundation
+import UIKit
 
 struct FrameworkList: Codable {
     var frameworkInfo:[Framework]
+    var formatInfo: Dictionary<String, card>
+    var databaseInfo: Dictionary<String, card>
+    var cloudInfo: Dictionary<String, card>
     
-}
-
-struct formatList: Codable {
-    var formatInfo: [card]
-}
-
-struct databaseList: Codable {
-    var databaseInfo: [card]
-}
-
-struct cloudList: Codable {
-    var cloudInfo: [card]
 }
 
 struct card: Codable {
     let picture: String
     let name: String
     let url: String
-    let color: String
-    let textcolor: String
+    let color: [CGFloat]
+    let textColor: [CGFloat]
 }
 
 
@@ -38,8 +30,12 @@ struct Framework: Codable {
     let name: String
     let picture: String
     let text: String?
-    let stars: Int?
+    let github: String
     let format : [String]
     let databases : [String]
     let cloud : [String]
+}
+
+struct Github: Codable {
+    let stargazers_count: Int
 }

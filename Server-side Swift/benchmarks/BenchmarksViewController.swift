@@ -26,12 +26,14 @@ class BenchmarksViewController: UIViewController, UICollectionViewDelegate, UICo
                                   "cpu": "2x2,5GHz",
                                   "ram": "4GB DDR3",
                                   "gpu": "1500MB Intel HD",
-                                  "image": "mac-mini"],
+                                  "image": "mac-mini",
+                                  "url": "https://everymac.com/systems/apple/mac_mini/specs/mac-mini-core-i5-2.5-late-2012-specs.html"],
                                  ["title": "Development: MacBook Pro",
                                   "cpu": "4x2.9GHz",
                                   "ram": "16Gb LPDRR3",
                                   "gpu": "4GB Radeon 460",
-                                  "image": "macbook-pro"]]
+                                  "image": "macbook-pro",
+                                  "url": "https://everymac.com/systems/apple/macbook_pro/specs/macbook-pro-core-i7-2.9-15-late-2016-retina-display-touch-bar-specs.html"]]
     
     
     var benchmarks: [Benchmark] = []
@@ -46,7 +48,6 @@ class BenchmarksViewController: UIViewController, UICollectionViewDelegate, UICo
         
         hardwareCollection.delegate = self
         hardwareCollection.dataSource = self
-        
         
          loadJSON()
         
@@ -71,6 +72,25 @@ class BenchmarksViewController: UIViewController, UICollectionViewDelegate, UICo
         
         let loadingTask = URLSession.shared.dataTask(with: url, completionHandler: completeHandler)
         loadingTask.resume()
+        
+    }
+    
+    func setTextAttributes(textToSet: String) {
+        
+        let stringValue = textToSet
+        
+        let attributedString = NSMutableAttributedString(string: stringValue)
+        
+        // *** Create instance of `NSMutableParagraphStyle`
+        let paragraphStyle = NSMutableParagraphStyle()
+        paragraphStyle.lineSpacing = 4.4
+        paragraphStyle.minimumLineHeight = 20
+        
+        // *** Apply attribute to string ***
+        attributedString.addAttribute(NSAttributedStringKey.paragraphStyle, value:paragraphStyle, range:NSMakeRange(0, attributedString.length))
+        
+        // *** Set Attributed String to your label ***
+        benchmarkInfo.attributedText = attributedString;
         
     }
     
@@ -142,7 +162,9 @@ class BenchmarksViewController: UIViewController, UICollectionViewDelegate, UICo
         requestsecondsLabel.text = "Blog Benchmarks - Request/Seconds"
         latencyLabel.text = "Blog Benchmarks - Average Latency"
         
-        benchmarkInfo.text = "The first benchmark is the /blog route in each, which is a page that returns 5 random images and fake blog posts for each request."
+        let textToGive = "The first benchmark is the /blog route in each, which is a page that returns 5 random images and fake blog posts for each request."
+        
+        setTextAttributes(textToSet: textToGive)
     }
     
     func setJsonContent() {
@@ -154,7 +176,9 @@ class BenchmarksViewController: UIViewController, UICollectionViewDelegate, UICo
         requestsecondsLabel.text = "JSON Benchmarks - Request/Seconds"
         latencyLabel.text = "JSON Benchmarks - Average Latency"
         
-        benchmarkInfo.text = "The second benchmark is the /json route in each framework, which is a page that returns a JSON dictionary of ten random numbers."
+        let textToGive = "The second benchmark is the /json route in each framework, which is a page that returns a JSON dictionary of ten random numbers."
+        
+        setTextAttributes(textToSet: textToGive)
     }
     
     @IBAction func SegmentedValueChange(_ sender: UISegmentedControl) {
@@ -165,6 +189,30 @@ class BenchmarksViewController: UIViewController, UICollectionViewDelegate, UICo
         if segmentedController.selectedSegmentIndex == 1 {
             setJsonContent()
         }
+    }
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
+        
+        let toNav = segue.destination as! UINavigationController
+        let toVC = toNav.viewControllers.first as! WebViewController
+        var selectedUrl : String?
+        
+        if segue.identifier == "forHardware" {
+            
+            if let cell = sender as? SectionCollectionViewCell,
+                let indexPath = self.hardwareCollection.indexPath(for: cell) {
+                
+                let identifier = hardwareConfiguration[indexPath.row]
+                selectedUrl = identifier["url"]
+            }
+            
+        }
+        
+        toVC.urlString = selectedUrl!
+        
     }
     
     /*

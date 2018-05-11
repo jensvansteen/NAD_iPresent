@@ -33,7 +33,6 @@ class OverzichtFrameworksTableViewController: UITableViewController {
         
         let parsedData = String.init(data: data!, encoding: String.Encoding.utf8)
         
-        
         let decoder = JSONDecoder()
         
         do {

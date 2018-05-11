@@ -10,6 +10,7 @@ import UIKit
 
 class CloudCollectionViewCell: UICollectionViewCell {
     
+    @IBOutlet weak var backgroundcolor: UIView!
     @IBOutlet weak var cloudImage: UIImageView!
     @IBOutlet weak var cloudLabel: UILabel!
 }

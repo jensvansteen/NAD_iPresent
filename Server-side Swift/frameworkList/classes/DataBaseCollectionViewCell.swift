@@ -10,6 +10,8 @@ import UIKit
 
 class DataBaseCollectionViewCell: UICollectionViewCell {
     
+    
+    @IBOutlet weak var backgroundcolor: UIView!
     @IBOutlet weak var databaseImage: UIImageView!
     @IBOutlet weak var databaseLabel: UILabel!
 }

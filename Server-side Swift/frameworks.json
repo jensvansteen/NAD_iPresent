@@ -4,88 +4,292 @@
             {
                 "name": "Kitura",
                 "picture": "kitura",
-                "text": "Nam porttitor blandit accumsan. Ut vel dictum sem, a pretium dui. In malesuada enim in dolor euismod, id commodo mi consectetur. Curabitur at vestibulum nisi. Nullam vehicula nisi velit. Mauris turpis nisl, molestie ut ipsum et, suscipit vehicula odio. Vestibulum interdum vestibulum felis ac molestie. Praesent aliquet quam et libero dictum, vitae dignissim leo eleifend. In in turpis turpis. Quisque justo turpis, vestibulum non enim nec, tempor mollis mi. Sed vel tristique quam.",
-                "stars": 6465,
+                "text": "Kitura has been on the market since 9 February 2016. Developed by IBM, Kitura receives a new release once in a couple of weeks. Its code is publicly available on GitHub, and the framework itself has been released under the Apache 2.0 license. The first noticeable thing about Kitura is the company responsible for it. IBM has been actively involved in Swift development since its inception (see the famous article from Mike Gilfix, Vice President, Process Transformation @ IBM, dated 22 September 2016, which deemed Swift a language ready for enterprise purposes). It looks like it is an important niche for IBM, which promises further improvements and new functionalities.",
+                "github": "https://api.github.com/repos/IBM-Swift/Kitura",
                 "format": [
-                    "JSON",
-                    "MQTT",
-                    "XML"
+                    "json",
+                    "mqtt",
+                    "xml",
+                    "mustache",
+                    "markdown",
+                    "stencil"
                 ],
                 "databases": [
-                    "MySQL",
-                    "PostgreSQL",
-                    "CouchDB"
+                    "mysql",
+                    "postgresql",
+                    "couchdb",
+                    "cassandra",
+                    "redis",
+                    "scylladb"
                 ],
                 "cloud": [
-                    "AWS",
-                    "Bluemix",
-                    "Heroku"
+                    "aws",
+                    "google",
+                    "ibm",
+                    "heroku",
+                    "digitalocean"
                 ]
             },
             {
                 "name": "Perfect",
                 "picture": "perfect",
-                "text": "Nam porttitor blandit accumsan. Ut vel dictum sem, a pretium dui. In malesuada enim in dolor euismod, id commodo mi consectetur. Curabitur at vestibulum nisi. Nullam vehicula nisi velit. Mauris turpis nisl, molestie ut ipsum et, suscipit vehicula odio. Vestibulum interdum vestibulum felis ac molestie. Praesent aliquet quam et libero dictum, vitae dignissim leo eleifend. In in turpis turpis. Quisque justo turpis, vestibulum non enim nec, tempor mollis mi. Sed vel tristique quam.",
-                "stars": 6465,
+                "text": "Perfect was created by a Canadian company, PerfectlySoft. Currently, among all server-side Swift frameworks, Perfect has the most starts on GitHub (12613). It was first released on 23 November 2015, and a lot of people have used since then. As claimed by authors, the framework is production-ready and can be used in commercial products. The latest version (3.0.3) dates back to 11 January 2018. The framework is updated on a monthly basis, and there are only a few open pull requests on GitHub, which indicates the maturity of Perfect.",
+                "github": "https://api.github.com/repos/PerfectlySoft/Perfect",
                 "format": [
-                    "JSON",
-                    "MQTT",
-                    "XML"
+                    "json",
+                    "mqtt",
+                    "mustache",
+                    "xml"
                 ],
                 "databases": [
-                    "MySQL",
-                    "PostgreSQL",
-                    "CouchDB"
+                    "mysql",
+                    "postgresql",
+                    "filemaker",
+                    "mongodb",
+                    "mariadb",
+                    "couchdb",
+                    "sqlite"
                 ],
                 "cloud": [
-                    "AWS",
-                    "Bluemix",
-                    "Heroku"
+                    "alibaba",
+                    "aws",
+                    "google",
+                    "digitalocean",
+                    "heroku"
                 ]
             },
             {
                 "name": "Vapor",
                 "picture": "vapor",
-                "text": "Nam porttitor blandit accumsan. Ut vel dictum sem, a pretium dui. In malesuada enim in dolor euismod, id commodo mi consectetur. Curabitur at vestibulum nisi. Nullam vehicula nisi velit. Mauris turpis nisl, molestie ut ipsum et, suscipit vehicula odio. Vestibulum interdum vestibulum felis ac molestie. Praesent aliquet quam et libero dictum, vitae dignissim leo eleifend. In in turpis turpis. Quisque justo turpis, vestibulum non enim nec, tempor mollis mi. Sed vel tristique quam.",
-                "stars": 6465,
+                "text": "Vapor was introduced by Tanner Nelson and Logan Wright in January, 2016 as an open-source, MIT-licensed software. At some point, the framework gained a sponsor, nodesagency.com, which allowed its two main developers to begin working full-time. Despite that, they’re not planning to change the license in the future. Vapor's primary objective was to speed up API development in an environment that Cocoa developers are already familiar with, and it is believed to be the primary course for Vapor. With the recent release of version 2.4.3, Vapor is gradually evolving into a very flexible and performant framework, which makes it a very interesting prospect for the future. It's on the verge of becoming the most popular server-side Swift framework with 12471 stars on GitHub, only 142 fewer than Perfect.",
+                "github": "https://api.github.com/repos/vapor/vapor",
                 "format": [
-                    "JSON",
-                    "MQTT",
-                    "XML"
+                    "json",
+                    "mqtt",
+                    "xml",
+                    "mustache",
+                    "markdown",
+                    "leaf"
                 ],
                 "databases": [
-                    "MySQL",
-                    "PostgreSQL",
-                    "CouchDB"
+                    "mysql",
+                    "postgresql",
+                    "couchdb",
+                    "redis",
+                    "mongodb"
                 ],
                 "cloud": [
-                    "AWS",
-                    "Bluemix",
-                    "Heroku"
+                    "aws",
+                    "heroku",
+                    "vaporcloud",
+                    "google",
+                    "digitalocean"
                 ]
             },
             {
                 "name": "Zewo",
                 "picture": "zewo",
-                "text": "Nam porttitor blandit accumsan. Ut vel dictum sem, a pretium dui. In malesuada enim in dolor euismod, id commodo mi consectetur. Curabitur at vestibulum nisi. Nullam vehicula nisi velit. Mauris turpis nisl, molestie ut ipsum et, suscipit vehicula odio. Vestibulum interdum vestibulum felis ac molestie. Praesent aliquet quam et libero dictum, vitae dignissim leo eleifend. In in turpis turpis. Quisque justo turpis, vestibulum non enim nec, tempor mollis mi. Sed vel tristique quam.",
-                "stars": 6465,
+                "text": "Zewo takes inspiration from Go, and strives to use Go-style concurrency while avoiding callbacks. It is licensed with the MIT open-source license and is maintained on GitHub by private individuals as far as I know. Zewo is certainly fast enough to use and has all the basic features you might expect from a server-side framework. This includes things like HTTP request/response, url routing, TLS (SSL), Websockets, templating (Mustache), and structured data (json/XML). It also allows the use of middleware (filters).",
+                "github": "https://api.github.com/repos/Zewo/Zewo",
                 "format": [
-                    "JSON",
-                    "MQTT",
-                    "XML"
+                    "json",
+                    "mustache",
+                    "xml"
                 ],
                 "databases": [
-                    "MySQL",
-                    "PostgreSQL",
-                    "CouchDB"
+                    "mysql",
+                    "postgresql",
+                    "redis",
+                    "rethinkdb"
                 ],
                 "cloud": [
-                    "AWS",
-                    "Bluemix",
-                    "Heroku"
+                    "aws",
+                    "heroku",
+                    "digitalocean"
                 ]
             }
         ],
+        "formatInfo": {
+            "json": {
+                "picture": "json",
+                "name": "JSON",
+                "url": "https://www.json.org/",
+                "color": [1.00,1.00,1.00,1.00],
+                "textColor": [0.13,0.14,0.15,1.00]
+            },
+            "xml": {
+                "picture": "xml",
+                "name": "XML",
+                "url": "https://www.xml.com/",
+                "color": [1.00,1.00,1.00,1.00],
+                "textColor": [0.13,0.14,0.15,1.00]
+            },
+            "mustache": {
+                "picture": "mustache",
+                "name": "Mustache",
+                "url": "https://mustache.github.io/",
+                "color": [1.00,1.00,1.00,1.00],
+                "textColor": [0.13,0.14,0.15,1.00]
+            },
+            "mqtt": {
+                "picture": "mqtt",
+                "name": "MQTT",
+                "url": "https://mqtt.org/",
+                "color": [1.00,1.00,1.00,1.00],
+                "textColor": [0.13,0.14,0.15,1.00]
+            },
+            "leaf": {
+                "picture": "leaf",
+                "name": "Leaf",
+                "url": "https://github.com/vapor/leaf",
+                "color": [1.00,1.00,1.00,1.00],
+                "textColor": [0.13,0.14,0.15,1.00]
+            },
+            "markdown": {
+                "picture": "markdown",
+                "name": "Markdown",
+                "url": "https://www.markdownguide.org/",
+                "color": [1.00,1.00,1.00,1.00],
+                "textColor": [0.13,0.14,0.15,1.00]
+            },
+            "stencil": {
+                "picture": "stencil",
+                "name": "Stencil",
+                "url": "https://stenciljs.com/",
+                "color": [0.09,0.09,0.11,1.00],
+                "textColor": [1.00,1.00,1.00,1.00]
+            }
+        },
+        "databaseInfo": {
+            "mysql": {
+                "picture": "mysql",
+                "name": "MySQL",
+                "url": "https://www.mysql.com/",
+                "color": [1.00,1.00,1.00,1.00],
+                "textColor": [0.09,0.39,0.53,1.00]
+            },
+            "postgresql": {
+                "picture": "postgresql",
+                "name": "PostgreSQL",
+                "url": "https://www.postgresql.org/",
+                "color": [1.00,1.00,1.00,1.00],
+                "textColor": [0.22,0.41,0.56,1.00]
+            },
+            "couchdb": {
+                "picture": "couchdb",
+                "name": "CouchDB",
+                "url": "https://couchdb.apache.org/",
+                "color": [0.93,0.93,0.93,1.00],
+                "textColor": [0.87,0.15,0.20,1.00]
+            },
+            "cassandra": {
+                "picture": "cassandra",
+                "name": "Cassandra",
+                "url": "https://cassandra.apache.org/",
+                "color": [0.57,0.73,0.35,1.00],
+                "textColor": [0.20,0.20,0.20,1.00]
+            },
+            "redis": {
+                "picture": "redis",
+                "name": "Redis",
+                "url": "https://redis.io/",
+                "color": [0.13,0.13,0.13,1.00],
+                "textColor": [1.00,1.00,1.00,1.00]
+            },
+            "scylladb": {
+                "picture": "scylladb",
+                "name": "ScyllaDB",
+                "url": "https://www.scylladb.com/",
+                "color": [0.23,0.23,0.34,1.00],
+                "textColor": [1.00,1.00,1.00,1.00]
+            },
+            "filemaker": {
+                "picture": "filemaker",
+                "name": "FileMaker",
+                "url": "https://www.filemaker.com/",
+                "color": [1.00,1.00,1.00,1.00],
+                "textColor": [0.28,0.20,0.20,1.00]
+            },
+            "mongodb": {
+                "picture": "mongodb",
+                "name": "MongoDB",
+                "url": "https://www.mongodb.com/",
+                "color": [0.26,0.29,0.31,1.00],
+                "textColor": [1.00,1.00,1.00,1.00]
+            },
+            "mariadb": {
+                "picture": "mariadb",
+                "name": "MariaDB",
+                "url": "https://mariadb.org/",
+                "color": [0.96,0.96,0.96,1.00],
+                "textColor": [0.64,0.43,0.27,1.00]
+            },
+            "sqlite": {
+                "picture": "sqlite",
+                "name": "SQLite",
+                "url": "https://www.sqlite.org/index.html",
+                "color": [1.00,1.00,1.00,1.00],
+                "textColor": [0.09,0.29,0.38,1.00]
+            },
+            "rethinkdb": {
+                "picture": "rethinkdb",
+                "name": "RethinkDB",
+                "url": "https://www.rethinkdb.com/",
+                "color": [0.13,0.31,0.38,1.00],
+                "textColor": [1.00,1.00,1.00,1.00]
+            }
+        },
+        "cloudInfo": {
+            "alibaba": {
+                "picture": "alibaba",
+                "name": "Alibaba Cloud",
+                "url": "https://www.alibabacloud.com/",
+                "color": [1.00,1.00,1.00,1.00],
+                "textColor": [0.22,0.24,0.25,1.00]
+            },
+            "aws": {
+                "picture": "aws",
+                "name": "Amazon Web Services",
+                "url": "https://aws.amazon.com/",
+                "color": [1.00,1.00,1.00,1.00],
+                "textColor": [0.22,0.24,0.25,1.00]
+            },
+            "google": {
+                "picture": "google",
+                "name": "Google Cloud Platform",
+                "url": "https://cloud.google.com/",
+                "color": [0.97,0.97,0.97,1.00],
+                "textColor": [0.22,0.24,0.25,1.00]
+            },
+            "heroku": {
+                "picture": "heroku",
+                "name": "Heroku",
+                "url": "https://www.heroku.com/",
+                "color": [0.39,0.09,0.69,1.00],
+                "textColor": [1.00,1.00,1.00,1.00]
+            },
+            "digitalocean": {
+                "picture": "digitalocean",
+                "name": "DigitalOcean",
+                "url": "https://www.digitalocean.com/",
+                "color": [0.90,0.94,1.00,1.00],
+                "textColor": [0.15,0.53,0.98,1.00]
+            },
+            "vaporcloud": {
+                "picture": "vaporcloud",
+                "name": "Vapor Cloud",
+                "url": "https://vapor.cloud/",
+                "color": [0.65,0.72,0.84,1.00],
+                "textColor": [1.00,1.00,1.00,1.00]
+            },
+            "ibm": {
+                "picture": "ibm",
+                "name": "IBM Cloud",
+                "url": "https://www.ibm.com/cloud/",
+                "color": [1.00,1.00,1.00,1.00],
+                "textColor": [0.13,0.13,0.13,1.00]
+            }
+        },
         "benchmarkListing": [
             {
                 "name": "Blog benchmarks - Request/Seconds",
