@@ -12,7 +12,7 @@ class DataFormatCollectionViewCell: UICollectionViewCell {
     
     var url: String?
     
-    @IBOutlet weak var buttonToPopover: UIButton!
+   
     @IBOutlet weak var backgroundcolor: UIView!
     @IBOutlet weak var formatLabel: UILabel!
     @IBOutlet weak var formatImage: UIImageView!

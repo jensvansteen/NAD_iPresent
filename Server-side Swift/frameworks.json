@@ -396,6 +396,33 @@
                     }
                 ]
             }
+        ],
+        "quizListing": [
+            {
+                "question": "Who is the developer of the Kutura Framework?",
+                "picture": "enterprise",
+                "answers": ["IBM","Cisco","Amazon"]
+            },
+            {
+                "question": "Which framework supports the Leaf templating system",
+                "picture": "leaf",
+                "answers": ["Vapor","Perfect","Zewo"]
+            },
+            {
+                "question": "In what year was Swift first introduced?",
+                "picture": "wwdc",
+                "answers": ["2014","2013","2015"]
+            },
+            {
+                "question": "Who has the most GitHub stars?",
+                "picture": "github",
+                "answers": ["Perfect","Kutura","Vapor"]
+            },
+            {
+                 "question": "Which framework is able to do the most JSON requests per second?",
+                 "picture": "requests",
+                 "answers": ["Perfect","Node.js","Kitura"]
+            }
         ]
     }
 }

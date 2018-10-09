@@ -15,11 +15,14 @@
 		3347E1C4209A11440059744D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3347E1C3209A11440059744D /* Assets.xcassets */; };
 		3347E1C7209A11440059744D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3347E1C5209A11440059744D /* LaunchScreen.storyboard */; };
 		339DBEB920A5710000637CEA /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339DBEB820A5710000637CEA /* WebViewController.swift */; };
-		33CCADFF20A4C4AA00D289FD /* frameworks.json in Resources */ = {isa = PBXBuildFile; fileRef = 33CCADFE20A4C4AA00D289FD /* frameworks.json */; };
+		33C033B920A5A6A900569569 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C033B820A5A6A900569569 /* QuizViewController.swift */; };
 		33D4E218209A366D00B46864 /* OverzichtFrameworksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D4E217209A366D00B46864 /* OverzichtFrameworksTableViewController.swift */; };
 		33D4E21A209A38CD00B46864 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D4E219209A38CD00B46864 /* CustomTableViewCell.swift */; };
 		33D4E21C209A4B1700B46864 /* frameworkListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D4E21B209A4B1700B46864 /* frameworkListModel.swift */; };
 		33D4E224209C945600B46864 /* FrameworkDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D4E223209C945600B46864 /* FrameworkDetailViewController.swift */; };
+		33DEAC9D20A5BBD400A8AC25 /* ScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33DEAC9C20A5BBD400A8AC25 /* ScoreViewController.swift */; };
+		33DEACA020A5C24000A8AC25 /* quizModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33DEAC9F20A5C24000A8AC25 /* quizModel.swift */; };
+		33DEACA220A5C64200A8AC25 /* frameworks.json in Resources */ = {isa = PBXBuildFile; fileRef = 33DEACA120A5C64200A8AC25 /* frameworks.json */; };
 		33E6DA7E20A05C4C007FE749 /* SectionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E6DA7D20A05C4C007FE749 /* SectionCollectionViewCell.swift */; };
 		33E6DA8220A07E18007FE749 /* DataFormatCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E6DA8120A07E18007FE749 /* DataFormatCollectionViewCell.swift */; };
 		33E6DA8420A08198007FE749 /* DataBaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E6DA8320A08198007FE749 /* DataBaseCollectionViewCell.swift */; };
@@ -37,11 +40,14 @@
 		3347E1C6209A11440059744D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3347E1C8209A11440059744D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		339DBEB820A5710000637CEA /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
-		33CCADFE20A4C4AA00D289FD /* frameworks.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = frameworks.json; sourceTree = "<group>"; };
+		33C033B820A5A6A900569569 /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
 		33D4E217209A366D00B46864 /* OverzichtFrameworksTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverzichtFrameworksTableViewController.swift; sourceTree = "<group>"; };
 		33D4E219209A38CD00B46864 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		33D4E21B209A4B1700B46864 /* frameworkListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = frameworkListModel.swift; sourceTree = "<group>"; };
 		33D4E223209C945600B46864 /* FrameworkDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkDetailViewController.swift; sourceTree = "<group>"; };
+		33DEAC9C20A5BBD400A8AC25 /* ScoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreViewController.swift; sourceTree = "<group>"; };
+		33DEAC9F20A5C24000A8AC25 /* quizModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = quizModel.swift; sourceTree = "<group>"; };
+		33DEACA120A5C64200A8AC25 /* frameworks.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = frameworks.json; sourceTree = "<group>"; };
 		33E6DA7D20A05C4C007FE749 /* SectionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionCollectionViewCell.swift; sourceTree = "<group>"; };
 		33E6DA8120A07E18007FE749 /* DataFormatCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataFormatCollectionViewCell.swift; sourceTree = "<group>"; };
 		33E6DA8320A08198007FE749 /* DataBaseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBaseCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -136,7 +142,8 @@
 		3347E1BB209A11430059744D /* Server-side Swift */ = {
 			isa = PBXGroup;
 			children = (
-				33CCADFE20A4C4AA00D289FD /* frameworks.json */,
+				33DEACA120A5C64200A8AC25 /* frameworks.json */,
+				33C033B720A5A68800569569 /* quiz */,
 				3338F2A4209FA1FD000516CC /* benchmarks */,
 				3338F2A3209FA1B3000516CC /* frameworkList */,
 				3347E1BC209A11430059744D /* AppDelegate.swift */,
@@ -146,6 +153,32 @@
 				3347E1C8209A11440059744D /* Info.plist */,
 			);
 			path = "Server-side Swift";
+			sourceTree = "<group>";
+		};
+		33C033B720A5A68800569569 /* quiz */ = {
+			isa = PBXGroup;
+			children = (
+				33DEAC9E20A5BF8600A8AC25 /* model */,
+				33DEAC9B20A5BBBC00A8AC25 /* classes */,
+				33C033B820A5A6A900569569 /* QuizViewController.swift */,
+			);
+			path = quiz;
+			sourceTree = "<group>";
+		};
+		33DEAC9B20A5BBBC00A8AC25 /* classes */ = {
+			isa = PBXGroup;
+			children = (
+				33DEAC9C20A5BBD400A8AC25 /* ScoreViewController.swift */,
+			);
+			path = classes;
+			sourceTree = "<group>";
+		};
+		33DEAC9E20A5BF8600A8AC25 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				33DEAC9F20A5C24000A8AC25 /* quizModel.swift */,
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,7 +239,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				33CCADFF20A4C4AA00D289FD /* frameworks.json in Resources */,
+				33DEACA220A5C64200A8AC25 /* frameworks.json in Resources */,
 				3347E1C7209A11440059744D /* LaunchScreen.storyboard in Resources */,
 				3347E1C4209A11440059744D /* Assets.xcassets in Resources */,
 				3347E1C2209A11430059744D /* Main.storyboard in Resources */,
@@ -221,7 +254,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				333AFDC9209DBA14005E8A52 /* BarChart.swift in Sources */,
+				33C033B920A5A6A900569569 /* QuizViewController.swift in Sources */,
+				33DEAC9D20A5BBD400A8AC25 /* ScoreViewController.swift in Sources */,
 				33D4E21A209A38CD00B46864 /* CustomTableViewCell.swift in Sources */,
+				33DEACA020A5C24000A8AC25 /* quizModel.swift in Sources */,
 				33E6DA8420A08198007FE749 /* DataBaseCollectionViewCell.swift in Sources */,
 				333AFDCD209DE947005E8A52 /* benchmarkModel.swift in Sources */,
 				333AFDC7209DB973005E8A52 /* BenchmarksViewController.swift in Sources */,
@@ -377,14 +413,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = XEQ2U6LS9G;
+				DEVELOPMENT_TEAM = 9RZW73LTB7;
 				INFOPLIST_FILE = "Server-side Swift/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Jens.Server-side-Swift";
+				PRODUCT_BUNDLE_IDENTIFIER = be.devine.nad.iPresent.;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -396,14 +432,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = XEQ2U6LS9G;
+				DEVELOPMENT_TEAM = 9RZW73LTB7;
 				INFOPLIST_FILE = "Server-side Swift/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Jens.Server-side-Swift";
+				PRODUCT_BUNDLE_IDENTIFIER = be.devine.nad.iPresent.;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

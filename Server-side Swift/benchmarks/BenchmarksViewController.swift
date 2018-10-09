@@ -97,7 +97,7 @@ class BenchmarksViewController: UIViewController, UICollectionViewDelegate, UICo
     
     func completeHandler(data:Data?, response:URLResponse?, error:Error?) {
         
-        let parsedData = String.init(data: data!, encoding: String.Encoding.utf8)
+//        let parsedData = String.init(data: data!, encoding: String.Encoding.utf8)
         
         
         let decoder = JSONDecoder()

@@ -66,22 +66,13 @@ class FrameworkDetailViewController: UIViewController, UICollectionViewDelegate,
         loadJSON()
         
         
-  
-        // Do any additional setup after loading the view.
     }
     
 
     override func viewDidAppear(_ animated: Bool) {
-        githubStars.text = "\(stars ?? 0)"
+        githubStars.text = "\(stars)"
     }
     
-//    func setWebView() {
-//        websiteToShow = WKWebView(frame: viewForWeb.bounds, configuration: WKWebViewConfiguration())
-//        websiteToShow.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-//        websiteToShow.allowsBackForwardNavigationGestures = true
-//        self.viewForWeb.addSubview(websiteToShow)
-//        viewForWeb.center = self.view.center
-//    }
     
     func setTextAttributes() {
         
@@ -89,15 +80,12 @@ class FrameworkDetailViewController: UIViewController, UICollectionViewDelegate,
         
         let attributedString = NSMutableAttributedString(string: stringValue!)
         
-        // *** Create instance of `NSMutableParagraphStyle`
         let paragraphStyle = NSMutableParagraphStyle()
         paragraphStyle.lineSpacing = 6.4
         paragraphStyle.minimumLineHeight = 20
         
-        // *** Apply attribute to string ***
         attributedString.addAttribute(NSAttributedStringKey.paragraphStyle, value:paragraphStyle, range:NSMakeRange(0, attributedString.length))
         
-        // *** Set Attributed String to your label ***
         frameworkText.attributedText = attributedString;
     }
     
@@ -119,7 +107,7 @@ class FrameworkDetailViewController: UIViewController, UICollectionViewDelegate,
     
     func completeHandler(data:Data?, response:URLResponse?, error:Error?) {
         
-        let parsedData = String.init(data: data!, encoding: String.Encoding.utf8)
+//        let parsedData = String.init(data: data!, encoding: String.Encoding.utf8)
         
         
         let decoder = JSONDecoder()
@@ -139,7 +127,7 @@ class FrameworkDetailViewController: UIViewController, UICollectionViewDelegate,
     
     func completeHandlerGithub(data:Data?, response:URLResponse?, error:Error?) {
         
-        let parsedData = String.init(data: data!, encoding: String.Encoding.utf8)
+//        let parsedData = String.init(data: data!, encoding: String.Encoding.utf8)
         
         
         let decoder = JSONDecoder()
@@ -172,7 +160,7 @@ class FrameworkDetailViewController: UIViewController, UICollectionViewDelegate,
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if collectionView.tag == 1 {
-            githubStars.text = "\(stars ?? 0)"
+            githubStars.text = "\(stars)"
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "formatCell", for: indexPath) as! DataFormatCollectionViewCell
             let identifier = formatsList!["\(formats[indexPath.row])"]
             cell.formatLabel.text = identifier?.name
@@ -246,17 +234,6 @@ class FrameworkDetailViewController: UIViewController, UICollectionViewDelegate,
     }
 
     
-    
-
-    
-//    @objc func handleCellSelected(sender: UITapGestureRecognizer){
-//        let cell = sender.view as! DataFormatCollectionViewCell
-//        let siteToGo = cell.restorationIdentifier!
-//        self.view.addSubview(viewForWeb)
-//        let myURL = URL(string: siteToGo)
-//        let myRequest = URLRequest(url: myURL!)
-//        websiteToShow.load(myRequest)
-//    }
     
             override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
