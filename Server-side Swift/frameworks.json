@@ -399,7 +399,7 @@
         ],
         "quizListing": [
             {
-                "question": "Who is the developer of the Kutura Framework?",
+                "question": "Who is the developer of the Kitura Framework?",
                 "picture": "enterprise",
                 "answers": ["IBM","Cisco","Amazon"]
             },
